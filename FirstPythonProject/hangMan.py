@@ -1,7 +1,7 @@
 import random
 from logo import logoo
 
-stages = [''' 
+stages = [
 """
    ________
     |/   |     
@@ -10,9 +10,10 @@ stages = ['''
     |    |        
     |   / \        
     |               
-    |___ ,
-"""
-   ________                   
+    |___
+""",
+    """
+   ________
     |/   |                         
     |   (_)                      
     |   /|\                             
@@ -51,6 +52,7 @@ stages = ['''
     |                            
     |___                    
     """,
+    """
    _________
     |/   |      
     |              
@@ -59,8 +61,8 @@ stages = ['''
     |               
     |                   
     |___                 
-    """,
-''']
+    """
+]
 word_list = ["messi","neymar","pedri","gavi"]
 print(logoo)
 lives = 6
@@ -97,4 +99,6 @@ while not game_over:
     if "_" not in display:
         game_over = True
         print("*********************YOU WIN********************* ")
+    print(f" length of stages{len(stages)}")
+    print(f"lives {lives}")
     print(stages[lives])
